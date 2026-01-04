@@ -19,32 +19,84 @@
   <body>
     <header class="header">
       <div class="container header-inner">
-        <nav class="nav">
-          <a href="./index.html" class="header-logo"
-            ><span class="logo-accent">Web</span>Studio</a
+        <a href="./index.html" class="header-logo"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <div class="header-wrapper">
+          <button
+            type="button"
+            class="close-btn burger-close-btn"
+            aria-label="Close burger"
           >
-          <ul class="nav-list">
+            <svg class="icon-cross" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link nav-active" href="./index.html">Studio</a>
+              </li>
+              <li><a class="nav-link" href="#">Portfolio</a></li>
+              <li><a class="nav-link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  class="contacts-link contacts-number"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-links header-social-links">
             <li>
-              <a class="nav-link nav-active" href="./index.html">Studio</a>
-            </li>
-            <li><a class="nav-link" href="#">Portfolio</a></li>
-            <li><a class="nav-link" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="contacts-list">
-            <li>
-              <a class="contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a
+                class="social-link header-link"
+                href="#"
+                aria-label="Instagram"
               >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="contacts-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="social-link header-link" href="#" aria-label="Twitter">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link header-link" href="#" aria-label="Facebook">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link header-link" href="#" aria-label="LinkedIn">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
+        <button class="burger-button" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -117,6 +169,10 @@
           <ul class="team-list">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg   1x,
+                  ./images/mark-guerrero@2.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero, Product Designer"
                 width="264"
@@ -176,6 +232,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford, Frontend Developer"
                 width="264"
@@ -235,6 +292,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg   1x,
+                  ./images/camila-garcia@2.jpg 2x
+                "
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia, Marketing"
                 width="264"
@@ -294,6 +355,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg   1x,
+                  ./images/daniel-wilson@2.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson, UI Designer"
                 width="264"
@@ -362,6 +427,10 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="
+                    ./images/banking-app.jpg   1x,
+                    ./images/banking-app@2.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="Mobile banking app UI screens"
                   width="360"
@@ -385,6 +454,10 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="
+                    ./images/cashless-payment.jpg   1x,
+                    ./images/cashless-payment@2.jpg 2x
+                  "
                   src="./images/cashless-payment.jpg"
                   alt="Smartphone scanning a QR code for cashless payment"
                   width="360"
@@ -410,6 +483,10 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="
+                    ./images/meditation-app.jpg   1x,
+                    ./images/meditation-app@2.jpg 2x
+                  "
                   src="./images/meditation-app.jpg"
                   alt="Meditation app interface on laptop and smartphone"
                   width="360"
@@ -433,6 +510,10 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="
+                    ./images/taxi-service.jpg   1x,
+                    ./images/taxi-service@2.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   alt="Driver using a taxi service app inside a car"
                   width="360"
@@ -456,6 +537,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="./images/screen.jpg 1x, ./images/screen@2.jpg 2x"
                   src="./images/screen.jpg"
                   alt="Space-themed digital illustrations and phone screen design"
                   width="360"
@@ -481,6 +563,10 @@
             <li class="portfolio-card">
               <div class="portfolio-img-box">
                 <img
+                  srcset="
+                    ./images/smiling-girl.jpg   1x,
+                    ./images/smiling-girl@2.jpg 2x
+                  "
                   src="./images/smiling-girl.jpg"
                   alt="Smiling woman using a smartphone outdoors"
                   width="360"
@@ -576,8 +662,12 @@
 
     <div class="modal-overlay">
       <div class="modal">
-        <button type="button" class="modal-close-btn" aria-label="Close modal">
-          <svg class="modal-icon-cross" width="8" height="8">
+        <button
+          type="button"
+          class="close-btn modal-close-btn"
+          aria-label="Close modal"
+        >
+          <svg class="icon-cross" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
