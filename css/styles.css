@@ -55,8 +55,7 @@ button {
 }
 
 .container {
-  max-width: 1158px;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -348,12 +347,10 @@ button {
 .portfolio-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 48px;
 }
 
 .portfolio-card {
-  max-width: 288px;
   cursor: pointer;
 }
 
@@ -408,10 +405,6 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 72px;
-}
-
-.footer-info {
-  max-width: 264px;
 }
 
 .footer-logo {
@@ -759,23 +752,16 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 1157.98px) {
-  .team-list {
-    margin: 0 auto;
-    max-width: 552px;
-  }
-
-  .portfolio-list {
-    margin: 0 auto;
-    max-width: 736px;
-  }
-
   .footer-inner {
-    max-width: 528px;
-    flex-wrap: wrap;
+    padding-left: 108px;
   }
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .burger-button {
     display: none;
   }
@@ -798,6 +784,7 @@ button {
 
   .nav-list {
     flex-direction: row;
+    gap: 40px;
     margin-bottom: 0;
     margin-left: 120px;
   }
@@ -884,6 +871,7 @@ button {
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px;
   }
 
@@ -912,11 +900,13 @@ button {
 
   .footer-inner {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 0;
   }
 
   .footer-info {
+    max-width: 264px;
     margin-bottom: 72px;
   }
 
@@ -950,6 +940,7 @@ button {
 
 @media (min-width: 1158px) {
   .container {
+    max-width: 1158px;
     padding: 0 15px;
   }
 
@@ -979,6 +970,10 @@ button {
 
   .hero {
     padding: 188px 0;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
   }
 
   /************ FEATURES SECTION ************/
@@ -1040,6 +1035,10 @@ button {
   }
 
   /************ FOOTER ************/
+
+  .footer-inner {
+    flex-wrap: nowrap;
+  }
 
   .footer-info {
     margin-bottom: 0px;
