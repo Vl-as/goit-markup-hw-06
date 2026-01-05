@@ -910,6 +910,10 @@ button {
     margin-bottom: 72px;
   }
 
+  .footer-logo {
+    text-align: left;
+  }
+
   .footer-label {
     text-align: left;
   }
